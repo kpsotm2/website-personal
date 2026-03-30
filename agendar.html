@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agendar reunión | Martín Soto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "surface": "#131313",
+                    "surface-container-low": "#1b1b1b",
+                    "on-secondary-fixed-variant": "#3d4565",
+                    "secondary-container": "#3d4565",
+                    "surface-container-highest": "#353535",
+                    "on-surface": "#e2e2e2",
+                    "on-secondary-container": "#acb3d9",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-error": "#690005",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-variant": "#353535",
+                    "inverse-surface": "#e2e2e2",
+                    "primary": "#f2ca50",
+                    "primary-container": "#d4af37",
+                    "on-primary-container": "#554300",
+                    "tertiary-container": "#b1b3b7",
+                    "on-primary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#c4c7ca",
+                    "on-tertiary-container": "#424549",
+                    "surface-tint": "#e9c349",
+                    "surface-dim": "#131313",
+                    "on-tertiary": "#2d3134",
+                    "on-secondary": "#272f4d",
+                    "on-primary": "#3c2f00",
+                    "inverse-on-surface": "#303030",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#ffe088",
+                    "on-error-container": "#ffdad6",
+                    "background": "#131313",
+                    "secondary-fixed-dim": "#bdc5eb",
+                    "tertiary": "#cccfd2",
+                    "secondary": "#bdc5eb",
+                    "outline-variant": "#4d4635",
+                    "on-secondary-fixed": "#111a37",
+                    "tertiary-fixed": "#e0e2e6",
+                    "on-tertiary-fixed-variant": "#44474a",
+                    "on-background": "#e2e2e2",
+                    "outline": "#99907c",
+                    "inverse-primary": "#735c00",
+                    "on-tertiary-fixed": "#191c1f",
+                    "on-surface-variant": "#d0c5af",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-fixed": "#dce1ff",
+                    "surface-container": "#1f1f1f",
+                    "error-container": "#93000a",
+                    "surface-bright": "#393939"
+                },
+                fontFamily: {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+                },
+                borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+            },
+        },
+    }
+</script>
+<style>
+    .glass-nav {
+        background: rgba(19, 19, 19, 0.6);
+        backdrop-filter: blur(20px);
+    }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+    <a href="/" class="text-xl font-black tracking-[-0.02em] text-[#f2ca50] font-headline">
+        Martín Soto
+    </a>
+    <div class="hidden md:flex items-center gap-12">
+        <a class="font-['Inter'] font-bold tracking-tighter uppercase text-sm text-white/70 hover:text-[#f2ca50] transition-colors duration-300" href="/#sobre-mi">Sobre mí</a>
+        <a class="font-['Inter'] font-bold tracking-tighter uppercase text-sm text-white/70 hover:text-[#f2ca50] transition-colors duration-300" href="/#empresas">Empresas</a>
+        <a class="font-['Inter'] font-bold tracking-tighter uppercase text-sm text-white/70 hover:text-[#f2ca50] transition-colors duration-300" href="/#contacto">Contacto</a>
+    </div>
+    <a href="/agendar" class="bg-primary text-on-primary px-6 py-2 font-headline font-bold text-sm uppercase tracking-widest scale-95 active:scale-90 transition-transform">
+        Hablemos
+    </a>
+</div>
+</nav>
+
+<main class="pt-32 pb-20 px-8 min-h-screen">
+<div class="max-w-4xl mx-auto">
+    <h2 class="font-label text-primary text-xs uppercase tracking-[0.3em] mb-6">Agenda</h2>
+    <h1 class="font-headline font-black text-5xl md:text-7xl uppercase tracking-tighter leading-none mb-16">
+        Hablemos.
+    </h1>
+
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ07T41d3wkbHKLBOqyS6jDB0OcpUpAdMJkSXrMNDHWu1Bpm9gWnrOGwe8Z9N8PUoE9_33MDh10B?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+    <!-- end Google Calendar Appointment Scheduling -->
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 px-8 border-t border-[#4d4635]/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto gap-8">
+    <div class="text-lg font-bold text-white font-headline tracking-tight">
+        Martín Soto
+    </div>
+    <div class="flex gap-12 font-['Space_Grotesk'] text-xs tracking-widest uppercase">
+        <a class="text-white/40 hover:text-white transition-opacity" href="#">LinkedIn</a>
+        <a class="text-white/40 hover:text-white transition-opacity" href="#">GitHub</a>
+        <a class="text-white/40 hover:text-white transition-opacity" href="#">Twitter</a>
+    </div>
+    <div class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/40">
+        © 2024 Martín Soto. All rights reserved.
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
